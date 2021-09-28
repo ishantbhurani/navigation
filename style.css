@@ -6,12 +6,18 @@
   padding: 0;
 }
 
+:root {
+  --clr-bg: #f3f3fb;
+  --clr-primary: #232443;
+  --clr-white: #ffffff;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-color: #f3f3fb;
-  color: #232443;
+  background-color: var(--clr-bg);
+  color: var(--clr-primary);
   padding: 2em;
 }
 
@@ -46,7 +52,7 @@ ul {
 }
 
 .card {
-  background-color: #fff;
+  background-color: var(--clr-white);
   border-radius: 0.5em;
   padding: 2em;
   box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.25);
@@ -70,7 +76,7 @@ ul {
 .nav-desktop li:hover,
 .nav-desktop li:focus,
 .nav-desktop .active {
-  border-color: #232443;
+  border-color: var(--clr-primary);
 }
 .searches {
   width: 400px;
